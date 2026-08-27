@@ -59,4 +59,19 @@ function myfunction() {
   console.log(u);
 }
 
+//function
+function function1(ac,bc){
+
+    let sum=ac+bc;
+    console.log("The total sum is: " + sum);
+}
+function1(5,10);
+function1(20,30); //We can  call the function multiple times with different arguments
+
+greet(); //We can call the function before its declaration due to hoisting
+function greet() {
+    console.log("Hello, welcome to my website!");
+}
+
+
 
