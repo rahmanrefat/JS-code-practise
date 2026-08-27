@@ -65,7 +65,7 @@ function function1(ac,bc){
     let sum=ac+bc;
     console.log("The total sum is: " + sum);
 }
-function1(5,10);
+function1(5,10); //here ac, bc are the parameters and 5,10 are the arguments
 function1(20,30); //We can  call the function multiple times with different arguments
 
 greet(); //We can call the function before its declaration due to hoisting
@@ -73,5 +73,21 @@ function greet() {
     console.log("Hello, welcome to my website!");
 }
 
+//function with return statement
+function function2(ac,bc){
+    let sum=ac+bc;
+    return sum;
+}
+let result=function2(20,10);
+console.log("The total sum is: " + result);
 
+function returnnObject(){
+    return {
+        name:'Refatt',
+        City:'Dhaka',
+        age:25,
+        country:'Bangladesh'
+    }
+}
 
+let obj=returnnObject();
